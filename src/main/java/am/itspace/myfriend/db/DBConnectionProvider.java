@@ -1,4 +1,4 @@
-package am.itspace.studentlessonservlet1.db;
+package am.itspace.myfriend.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,7 +12,7 @@ public class DBConnectionProvider {
         dbConnectionProvider = new DBConnectionProvider();
     }
 
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/student-lesson-servlet";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/my_friend";
     private static final String DB_USER_NAME = "root";
     private static final String DB_PASSWORD = "root";
 

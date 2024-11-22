@@ -15,20 +15,20 @@
 </head>
 <body>
 <nav></nav>
-<h1>registration</h1>
-<%if (request.getAttribute("msg") != null){%>
-    <p style="color: red"><%=request.getAttribute("msg")%></p>
-<%}%>
-<form action="/registration" method="post">
-    name: <input type="text" name="name">
-    surname: <input type="text" name="surname">
-    email: <input type="text" name="email">
-    password: <input type="password" name="password">
-    <select name="userType">
-        <option value="USER">User</option>
-        <option value="ADMIN">Admin</option>
-    </select>
-    <input type="submit" value="add">
+<div class="main_div">
+    <h1>registration</h1>
+    <%if (request.getAttribute("msg") != null) {%>
+    <p style="color: red"><%=request.getAttribute("msg")%>
+    </p>
+    <%}%>
+    <form action="/registration" method="post" enctype="multipart/form-data">
+        name: <input type="text" name="name">
+        surname: <input type="text" name="surname">
+        email: <input type="text" name="email">
+        password: <input type="password" name="password">
+        <input type="file" name="img">
+        <input type="submit" value="add">
 </form>
+</div>
 </body>
 </html>

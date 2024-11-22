@@ -1,7 +1,8 @@
-package am.itspace.studentlessonservlet1.servlet;
+package am.itspace.myfriend.servlet;
 
-import am.itspace.studentlessonservlet1.model.User;
-import am.itspace.studentlessonservlet1.service.UserService;
+
+import am.itspace.myfriend.model.User;
+import am.itspace.myfriend.service.UserService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

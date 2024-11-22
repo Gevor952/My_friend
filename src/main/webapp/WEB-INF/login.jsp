@@ -15,17 +15,19 @@
 </head>
 <body>
 <nav></nav>
-<h1>login</h1>
-<br>
-<% if(request.getAttribute("msg") != null){%>
+<div class="main_div">
+    <h1>login</h1>
+    <br>
+    <% if(request.getAttribute("msg") != null){%>
     <p style="color: red"><%=request.getAttribute("msg")%></p>
-<%}%>
-<form action="/login" method="post">
-    email: <input type="text" name="email">
-    password: <input type="password" name="password">
-    <input type="submit" value="enter">
-</form>
-<a href="/registration" class="a_but" id="registration"><p>registration</p></a>
+    <%}%>
+    <form action="/login" method="post">
+        email: <input type="text" name="email">
+        password: <input type="password" name="password">
+        <input type="submit" value="enter">
+    </form>
+    <a href="/registration" class="a_but" id="registration"><p>registration</p></a>
 
+</div>
 </body>
 </html>

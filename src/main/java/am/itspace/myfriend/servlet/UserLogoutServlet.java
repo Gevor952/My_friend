@@ -1,4 +1,4 @@
-package am.itspace.studentlessonservlet1.servlet;
+package am.itspace.myfriend.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
