@@ -14,7 +14,7 @@
     </style>
 </head>
 <body>
-<nav></nav>
+<nav><a href="/" class="a_but" id="singin"><p>home</p></a></nav>
 <div class="main_div">
     <h1>registration</h1>
     <%if (request.getAttribute("msg") != null) {%>

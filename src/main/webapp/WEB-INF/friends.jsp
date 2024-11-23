@@ -16,7 +16,7 @@
 </head>
 <body>
 <%List<User> friends = (List<User>) request.getAttribute("friends");%>
-<nav></nav>
+<nav><a href="/" class="a_but" id="singin"><p>home</p></a></nav>
 <div class="main_div">
     <h1>Users</h1>
     <table>

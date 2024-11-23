@@ -16,7 +16,7 @@
 </head>
 <body>
 <%List<FriendRequest> requests = ((List<FriendRequest>) request.getAttribute("friendRequests"));%>
-<nav></nav>
+<nav><a href="/" class="a_but" id="singin"><p>home</p></a></nav>
 <div class="main_div">
     <h1>Friend_Responses</h1>
     <table>
