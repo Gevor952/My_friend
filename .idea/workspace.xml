@@ -10,40 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acaa1876-fe7c-4a6f-bdcd-e87a1a333486" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/db/DBConnectionProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/db/DBConnectionProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/filter/NoUserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/filter/NoUserFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/filter/UserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/filter/UserFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/model/FriendRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/model/FriendRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/model/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/service/FriendRequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/service/FriendRequestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/service/MessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/AcceptServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/AcceptServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/DeleteFriendRequestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/DeleteFriendRequestServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/FriendRequestsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/FriendRequestsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/FriendResponsesServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/FriendResponsesServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/FriendsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/FriendsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/GetImgServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/GetImgServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/MainServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/SendMessageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/SendMessageServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/SendRequestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/SendRequestServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/UserLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/UserLoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/UserLogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/UserLogoutServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/UserRegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/UserRegistrationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/UsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/UsersServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/util/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/util/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friendRequests.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friendRequests.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friendResponses.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friendResponses.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friends.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friends.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/registration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sendMessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sendMessage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/users.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,12 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Gevor952/My_friend.git",
-    "accountId": "fee10b91-5238-4a70-8552-e8e906713268"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Gevor952&quot;
   }
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Gevor952/My_friend.git&quot;,
+    &quot;accountId&quot;: &quot;fee10b91-5238-4a70-8552-e8e906713268&quot;
+  }
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -89,30 +64,30 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 9.0.97.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/NITRO/IdeaProjects/My friend/src/main/java/am/itspace/myfriend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.97.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/NITRO/IdeaProjects/My friend/src/main/java/am/itspace/myfriend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\NITRO\IdeaProjects\My friend\src\main\java\am\itspace\myfriend" />
@@ -237,6 +212,8 @@
       <updated>1732192812567</updated>
       <workItem from="1732192813612" duration="4717000" />
       <workItem from="1732201026899" duration="33961000" />
+      <workItem from="1732350781325" duration="631000" />
+      <workItem from="1732361216557" duration="781000" />
     </task>
     <servers />
   </component>

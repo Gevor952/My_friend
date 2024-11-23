@@ -53,10 +53,15 @@ public class UserRegistrationServlet extends HttpServlet {
             msgBuilder.append("Please enter your Email");
         }
 
-        if (password == null || password.trim().isEmpty() || password.length() > 6) {
+
+        if (password == null || password.trim().isEmpty()) {
             msgBuilder.append("<br>");
             msgBuilder.append("Please enter your Password");
+        } else if (password.length() < 6) {
+            msgBuilder.append("<br>");
+            msgBuilder.append("Password must be longer than 6 characters");
         }
+
 
 
         Part img = req.getPart("img");
