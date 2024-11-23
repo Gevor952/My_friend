@@ -19,6 +19,9 @@
 <nav></nav>
 <div class="main_div">
   <h1>Users</h1>
+  <%if(request.getAttribute("msg") != null){%>
+  <p style="color: red">request.getAttribute("msg")</p>
+  <%}%>
   <table>
     <tr>
       <th>img</th>

@@ -164,4 +164,29 @@ public class UserService {
         return result;
     }
 
+    public List<User> getFriends(int userid, int friendid) {
+        List<User> result = new ArrayList<>();
+        String sql = "SELECT * FROM friends " +
+                "INNER JOIN user u1 ON friends.friend_id = u1.id " +
+                "where user_id = " + userid + " AND friend_id = " + friendid;
+
+        try(Statement statement = connection.createStatement()) {
+            ResultSet resultSet = statement.executeQuery(sql);
+            while (resultSet.next()) {
+                User user = User.builder()
+                        .id(resultSet.getInt(3))
+                        .name(resultSet.getString(4))
+                        .surname(resultSet.getString(5))
+                        .email(resultSet.getString(6))
+                        .password(resultSet.getString(7))
+                        .image_name(resultSet.getString(8))
+                        .build();
+                result.add(user);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
 }

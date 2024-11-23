@@ -149,5 +149,39 @@ public class FriendRequestService {
         return result;
     }
 
-
+    public FriendRequest getFriendRequestByToAndFromId(int fromId, int toId) {
+        FriendRequest result = null;
+        String sql = "SELECT * FROM friend_request " +
+                "INNER JOIN user u1 ON friend_request.from_id = u1.id " +
+                "INNER JOIN user u2 ON friend_request.to_id = u2.id " +
+                "WHERE from_id = " + fromId + " AND to_id = " + toId;
+        try(Statement statement = connection.createStatement()) {
+            ResultSet resultSet = statement.executeQuery(sql);
+            if (resultSet.next()) {
+                result = FriendRequest.builder()
+                        .id(resultSet.getInt(1))
+                        .fromUser(User.builder()
+                                .id(resultSet.getInt(5))
+                                .name(resultSet.getString(6))
+                                .surname(resultSet.getString(7))
+                                .email(resultSet.getString(8))
+                                .password(resultSet.getString(9))
+                                .image_name(resultSet.getString(10))
+                                .build())
+                        .toUser(User.builder()
+                                .id(resultSet.getInt(11))
+                                .name(resultSet.getString(12))
+                                .surname(resultSet.getString(13))
+                                .email(resultSet.getString(14))
+                                .password(resultSet.getString(15))
+                                .image_name(resultSet.getString(16))
+                                .build())
+                        .date(resultSet.getDate(4))
+                        .build();
+            }
+        } catch (SQLException  e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 }
