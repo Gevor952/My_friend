@@ -137,3 +137,23 @@ input:focus{
 #logout p{
     margin: 0;
 }
+
+.p_message_user{
+    float: right;
+    font-size: 18px;
+    background: #641598;
+    border-radius: 15px;
+}
+
+.p_message_friend{
+    font-size: 18px;
+    margin:5px 30% 5px 0;
+    background: #641598;
+    border-radius: 15px;
+}
+.container {
+    display: flex;
+    justify-content: flex-end;
+    margin:5px 0 5px 30%;
+
+}

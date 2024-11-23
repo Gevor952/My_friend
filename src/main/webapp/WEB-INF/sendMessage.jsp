@@ -11,6 +11,9 @@
 <html>
 <head>
     <title>Title</title>
+    <style>
+        <%@include file="../style/style2.css"%>
+    </style>
 </head>
 <body>
 <%List<Message> messages = ((List<Message>) request.getAttribute("messages"));%>
@@ -20,9 +23,13 @@
 
     <% for (Message message : messages) { %>
     <% if (message.getFromId().getId() == ((User) request.getSession().getAttribute("user")).getId()) { %>
-    <p style="color: green"><%= message.getMessage() %></p>
+    <div class="container">
+        <span style="color: white" class="p_message_user"><%= message.getMessage() %></span>
+    </div>
+    <br>
     <% } else { %>
-    <p style="color: #0033ff"><%= message.getMessage() %></p>
+    <span style="color: white" class="p_message_friend"><%= message.getMessage() %></span>
+    <br>
     <% } %>
     <% } %>
 
