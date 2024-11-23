@@ -118,7 +118,7 @@ public class FriendRequestService {
         String sql = "SELECT * FROM friend_request " +
                 "INNER JOIN user u1 ON friend_request.from_id = u1.id " +
                 "INNER JOIN user u2 ON friend_request.to_id = u2.id " +
-                "WHERE to_id = " + fromId;
+                "WHERE from_id = " + fromId;
         try(Statement statement = connection.createStatement()) {
             ResultSet resultSet = statement.executeQuery(sql);
             while (resultSet.next()) {

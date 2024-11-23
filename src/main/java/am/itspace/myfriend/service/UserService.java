@@ -98,6 +98,28 @@ public class UserService {
         return result;
     }
 
+
+    public List<User> getAllUsers(int id) {
+        List<User> result = new ArrayList<>();
+        String sql = "SELECT * FROM user WHERE id <> " + id ;
+        try(Statement statement = connection.createStatement()) {
+            ResultSet resultSet = statement.executeQuery(sql);
+            while (resultSet.next()) {
+                User user = new User();
+                user.setId(resultSet.getInt("id"));
+                user.setName(resultSet.getString("name"));
+                user.setSurname(resultSet.getString("surname"));
+                user.setEmail(resultSet.getString("email"));
+                user.setPassword(resultSet.getString("password"));
+                user.setImage_name(resultSet.getString("image_name"));
+                result.add(user);
+            }
+        } catch (SQLException  e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
     public void acceptFriend(User user, User user2) {
         String sql = "INSERT INTO friends(user_id, friend_id) VALUES (?, ?)";
         try(PreparedStatement statement = connection.prepareStatement(sql)) {

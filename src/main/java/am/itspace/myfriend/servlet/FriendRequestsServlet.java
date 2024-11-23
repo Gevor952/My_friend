@@ -21,6 +21,6 @@ public class FriendRequestsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<FriendRequest> friendRequests = friendRequestService.getAllFriendRequestByFromId(((User)req.getSession().getAttribute("user")).getId());
         req.setAttribute("friendRequests", friendRequests);
-        req.getRequestDispatcher("/WEB-INF/friendResponses.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/friendRequests.jsp").forward(req, resp);
     }
 }

@@ -9,10 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acaa1876-fe7c-4a6f-bdcd-e87a1a333486" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="acaa1876-fe7c-4a6f-bdcd-e87a1a333486" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/UserRegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/UserRegistrationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/service/FriendRequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/service/FriendRequestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/FriendRequestsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/FriendRequestsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/UsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/UsersServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,11 +215,24 @@
       <workItem from="1732192813612" duration="4717000" />
       <workItem from="1732201026899" duration="33961000" />
       <workItem from="1732350781325" duration="631000" />
-      <workItem from="1732361216557" duration="781000" />
+      <workItem from="1732361216557" duration="1467000" />
     </task>
+    <task id="LOCAL-00001" summary=".">
+      <option name="closed" value="true" />
+      <created>1732362087923</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732362087923</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
