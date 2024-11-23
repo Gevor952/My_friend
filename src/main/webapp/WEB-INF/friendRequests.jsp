@@ -9,32 +9,37 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-  <title>Title</title>
-  <style>
-    <%@include file="../style/style2.css"%>
-  </style>
+    <title>Title</title>
+    <style>
+        <%@include file="../style/style2.css"%>
+    </style>
 </head>
 <body>
 <%List<FriendRequest> requests = ((List<FriendRequest>) request.getAttribute("friendRequests"));%>
 <nav></nav>
 <div class="main_div">
-  <h1>Friend_Responses</h1>
-  <table>
-    <tr>
-      <th>img</th>
-      <th>name</th>
-      <th>surname</th>
-      <th>email</th>
-    </tr>
-    <%for(FriendRequest friendRequest : requests){%>
-    <tr>
-      <td><img src="/getImg?imgName=<%=friendRequest.getToUser().getImage_name()%>" width="100" height="100"></td>
-      <td><%=friendRequest.getToUser().getName()%></td>
-      <td><%=friendRequest.getToUser().getSurname()%></td>
-      <td><%=friendRequest.getToUser().getEmail()%></td>
-    </tr>
-    <%}%>
-  </table>
+    <h1>Friend_Responses</h1>
+    <table>
+        <tr>
+            <th>img</th>
+            <th>name</th>
+            <th>surname</th>
+            <th>email</th>
+            <th>delete</th>
+        </tr>
+        <%for (FriendRequest friendRequest : requests) {%>
+        <tr>
+            <td><img src="/getImg?imgName=<%=friendRequest.getToUser().getImage_name()%>" width="100" height="100"></td>
+            <td><%=friendRequest.getToUser().getName()%>
+            </td>
+            <td><%=friendRequest.getToUser().getSurname()%>
+            </td>
+            <td><%=friendRequest.getToUser().getEmail()%>
+            </td>
+            <td><a href="/deleteFriendRequest?id=<%=friendRequest.getId()%>" class="a_but"><p>delete</p></a></td>
+        </tr>
+        <%}%>
+    </table>
 </div>
 </body>
 </html>
