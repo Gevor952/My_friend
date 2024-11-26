@@ -9,26 +9,48 @@
 <html>
 <head>
     <title>Title</title>
-    <style>
-        <%@include file="../style/style2.css"%>
-    </style>
+    <link rel="stylesheet" href="/style/style1.css">
+    <link rel="stylesheet" href="/style/btn_style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-<nav><a href="/" class="a_but" id="singin"><p>home</p></a></nav>
-<div class="main_div">
-    <h1>registration</h1>
+<nav>
+    <div class="text-box" id="home_btn">
+        <a href="/" class="btn btn-white ">Home</a>
+    </div>
+</nav>
+
+<div class="wrapper">
+    <h1>Register</h1>
     <%if (request.getAttribute("msg") != null) {%>
     <p style="color: red"><%=request.getAttribute("msg")%>
     </p>
     <%}%>
-    <form action="/registration" method="post" enctype="multipart/form-data">
-        name: <input type="text" name="name">
-        surname: <input type="text" name="surname">
-        email: <input type="text" name="email">
-        password: <input type="password" name="password">
-        <input type="file" name="img">
-        <input type="submit" value="add">
-</form>
+    <form action="/registration" method="post">
+        <div class="input-box">
+            <input type="text" placeholder="name" name="name">
+            <i class='bx bx-user'></i>
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="surname" name="surname">
+            <i class='bx bx-user'></i>
+        </div>
+        <div class="input-box">
+            <input type="email" placeholder="email" name="email">
+            <i class='bx bx-envelope'></i>
+        </div>
+        <div class="input-box">
+            <input type="password" name="password" placeholder="password" required>
+            <i class='bx bx-lock-alt'></i>
+        </div>
+        <div class="input-box">
+            <input type="file" name="img" id="file_input">
+            <i class='bx bx-file'></i>
+        </div>
+
+        <button class="my_btn">Register</button>
+    </form>
+
 </div>
 </body>
 </html>

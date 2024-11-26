@@ -9,25 +9,49 @@
 <html>
 <head>
     <title>Title</title>
-    <style>
-        <%@include file="../style/style2.css"%>
-    </style>
+
+    <link rel="stylesheet" href="/style/style1.css">
+    <link rel="stylesheet" href="/style/btn_style.css">
+
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
-<nav><a href="/" class="a_but" id="singin"><p>home</p></a></nav>
-<div class="main_div">
+<nav>
+    <div class="text-box" id="home_btn">
+        <a href="/" class="btn btn-white ">Home</a>
+    </div>
+</nav>
+
+<div class="wrapper">
     <h1>login</h1>
     <br>
-    <% if(request.getAttribute("msg") != null){%>
-    <p style="color: red"><%=request.getAttribute("msg")%></p>
+    <% if (request.getAttribute("msg") != null) {%>
+    <p style="color: red"><%=request.getAttribute("msg")%>
+    </p>
     <%}%>
     <form action="/login" method="post">
-        email: <input type="text" name="email">
-        password: <input type="password" name="password">
-        <input type="submit" value="enter">
+        <div class="input-box">
+            <input type="text" name="email" placeholder="email" required>
+            <i class='bx bx-envelope'></i>
+
+        </div>
+        <div class="input-box">
+            <input type="password" name="password" placeholder="password" required>
+            <i class='bx bx-lock-alt'></i>
+
+        </div>
+
+        <button class="my_btn">Login</button>
+
+        <div class="register-link">
+            <p>Don't have an account? <a href="/registration" class="a_but" id="registration">Register</a></p>
+        </div>
     </form>
-    <a href="/registration" class="a_but" id="registration"><p>registration</p></a>
 
 </div>
+
 </body>
 </html>

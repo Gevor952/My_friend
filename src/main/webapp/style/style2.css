@@ -3,20 +3,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
-    background: gray;
+    background: url("images/freepik__a-serene-landscape-with-mountains-silhouetted-agai__58151 (1).jpeg") no-repeat;
 }
 
 nav{
     width: 100%;
-    height: 70px;
+    height: 60px;
     background: #232323;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .main_div{
-    width: 80%;
+    width: 60%;
     height: 100vh;
     margin: auto;
     background: white;
@@ -156,4 +160,86 @@ input:focus{
     justify-content: flex-end;
     margin:5px 0 5px 30%;
 
+}
+
+#my_profil{
+    position: absolute;
+    margin: 0 0 0 140px;
+
+}
+
+#my_profil p{
+    margin: 0;
+}
+
+
+#img_lg{
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 140px;
+}
+
+
+#span_lg{
+    margin: 0 0 0 20px;
+    color: white;
+}
+
+#img_lg_id{
+    height: 100%;
+}
+
+
+
+
+#home_btn1{
+    margin: 5px 0 0 10px;
+    font-size: 16px;
+}
+
+#home_btn2{
+    margin: 5px 0 0 10px;
+    font-size: 16px;
+}
+
+#myProfil_nav{
+    margin: 5px 0 0 180px;
+    font-size: 16px;
+}
+
+.outer-div {
+    display: flex;
+    flex-direction: column; /* Элементы располагаются вертикально */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.inner-div {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    background-color: #fff;
+}
+
+.inner-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.porc{
+    width: 400px;
+    height: 50px;
+    border: #641598 solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f8f8; /* Если нужен другой фон */
 }

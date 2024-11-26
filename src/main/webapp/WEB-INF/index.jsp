@@ -3,21 +3,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>1</title>
-
-
-    <style>
-        <%@include file="../style/style2.css"%>
-    </style>
+    <title>Title</title>
+    <link rel="stylesheet" href="/style/style2.css">
+    <link rel="stylesheet" href="/style/btn_style.css">
 
 </head>
 <body>
 <nav>
     <%if (session.getAttribute("user") == null){%>
-    <a href="/login" class="a_but" id="singin"><p>singin</p></a>
+    <div class="text-box" id="home_btn1">
+        <a href="/login" class="btn btn-white ">Singing</a>
+    </div>
     <%} else {%>
-    <a href="/logout" class="a_but" id="logout"><p>logout</p></a>
+    <div class="text-box" id="home_btn2">
+        <a href="/logout" class="btn btn-white ">Logout</a>
+    </div>
+    <div class="text-box" id="myProfil_nav">
+        <a href="/myProfil" class="btn btn-white " >My Profil</a>
+    </div>
     <% }%>
+
 </nav>
 <div class="main_div" id="tlg">
 

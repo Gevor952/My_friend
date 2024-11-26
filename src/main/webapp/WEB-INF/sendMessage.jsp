@@ -11,9 +11,7 @@
 <html>
 <head>
     <title>Title</title>
-    <style>
-        <%@include file="../style/style2.css"%>
-    </style>
+    <link rel="stylesheet" href="/style/style2.css">
 </head>
 <body>
 <%List<Message> messages = ((List<Message>) request.getAttribute("messages"));%>

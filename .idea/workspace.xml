@@ -10,7 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acaa1876-fe7c-4a6f-bdcd-e87a1a333486" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/model/Images.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/service/ImagesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/LikeImgServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/MyProfil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/btn_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/images/freepik__a-serene-landscape-with-mountains-silhouetted-agai__58151 (1).jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/style1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8c038aea-4a12-418c-8764-f4fff2010239.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8c038aea-4a12-418c-8764-f4fff2010239.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/filter/UserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/filter/UserFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/MainServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friendRequests.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friendRequests.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friendResponses.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friendResponses.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friends.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friends.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/logout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myProfil.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/registration.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sendMessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sendMessage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/style/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/style2.css" afterDir="false" />
     </list>
@@ -23,6 +41,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="CSS File" />
         <option value="Class" />
       </list>
     </option>
@@ -72,6 +91,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/NITRO/IdeaProjects/My friend/src/main/java/am/itspace/myfriend&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -97,7 +117,10 @@
       <recent name="C:\Users\NITRO\IdeaProjects\My friend\src\main\java\am\itspace\myfriend\service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\NITRO\IdeaProjects\My friend\src\main\webapp\style" />
+      <recent name="C:\Users\NITRO\IdeaProjects\My friend\src\main\webapp\style\images" />
       <recent name="C:\Users\NITRO\IdeaProjects\My friend\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\NITRO\IdeaProjects\My friend\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="am.itspace.myfriend.servlet" />
@@ -106,6 +129,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.97" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.97" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/home" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -213,7 +237,12 @@
       <workItem from="1732192813612" duration="4717000" />
       <workItem from="1732201026899" duration="33961000" />
       <workItem from="1732350781325" duration="631000" />
-      <workItem from="1732361216557" duration="8193000" />
+      <workItem from="1732361216557" duration="16756000" />
+      <workItem from="1732463925445" duration="107000" />
+      <workItem from="1732553348386" duration="10440000" />
+      <workItem from="1732567430710" duration="6446000" />
+      <workItem from="1732603627752" duration="5534000" />
+      <workItem from="1732627413450" duration="4008000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -255,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732366858538</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=".">
+      <option name="closed" value="true" />
+      <created>1732371923623</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732371923623</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

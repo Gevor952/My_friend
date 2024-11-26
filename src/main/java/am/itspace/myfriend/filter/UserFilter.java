@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = {"/users", "/friendResponses", "/friendRequests", "/friends", "/logout", "/sendMessage"})
+@WebFilter(urlPatterns = {"/users", "/friendResponses", "/friendRequests", "/friends", "/logout", "/sendMessage", "/myProfil"})
 public class UserFilter extends HttpFilter {
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
