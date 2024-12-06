@@ -23,7 +23,6 @@ public class ImagesService {
                         .userId(rs.getInt("user_id"))
                         .imgName(rs.getString("img_name"))
                         .like(rs.getBoolean("like"))
-                        .comment(rs.getString("comment"))
                         .build();
                 images.add(image); // Add the image to the list
             }

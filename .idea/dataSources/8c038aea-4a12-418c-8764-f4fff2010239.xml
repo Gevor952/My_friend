@@ -1020,7 +1020,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="296" parent="1" name="my_friend">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-11-23.17:00:01</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-11-26.21:36:19</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="297" parent="1" name="mysql.infoschema">
@@ -1041,228 +1041,258 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <user id="300" parent="1" name="root">
       <Host>localhost</Host>
     </user>
-    <table id="301" parent="296" name="friend_request">
+    <table id="301" parent="296" name="comment">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="302" parent="296" name="friends">
+    <table id="302" parent="296" name="friend_request">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="303" parent="296" name="images">
+    <table id="303" parent="296" name="friends">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="304" parent="296" name="message">
+    <table id="304" parent="296" name="images">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="305" parent="296" name="user">
+    <table id="305" parent="296" name="message">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="306" parent="301" name="id">
+    <table id="306" parent="296" name="user">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="307" parent="301" name="user_id">
+      <Position>1</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="308" parent="301" name="img_id">
+      <Position>2</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="309" parent="301" name="comment">
+      <Position>3</Position>
+      <StoredType>text|0s</StoredType>
+    </column>
+    <foreign-key id="310" parent="301" name="comment_ibfk_1">
+      <ColNames>user_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>user</RefTableName>
+    </foreign-key>
+    <foreign-key id="311" parent="301" name="comment_ibfk_2">
+      <ColNames>img_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>images</RefTableName>
+    </foreign-key>
+    <index id="312" parent="301" name="user_id">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="313" parent="301" name="img_id">
+      <ColNames>img_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <column id="314" parent="302" name="id">
       <AutoIncrement>5</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="307" parent="301" name="from_id">
+    <column id="315" parent="302" name="from_id">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="308" parent="301" name="to_id">
+    <column id="316" parent="302" name="to_id">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="309" parent="301" name="date">
+    <column id="317" parent="302" name="date">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <foreign-key id="310" parent="301" name="friend_request_ibfk_2">
+    <foreign-key id="318" parent="302" name="friend_request_ibfk_2">
       <ColNames>from_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>user</RefTableName>
     </foreign-key>
-    <foreign-key id="311" parent="301" name="friend_request_ibfk_1">
+    <foreign-key id="319" parent="302" name="friend_request_ibfk_1">
       <ColNames>to_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>user</RefTableName>
     </foreign-key>
-    <index id="312" parent="301" name="PRIMARY">
+    <index id="320" parent="302" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="313" parent="301" name="from_id">
+    <index id="321" parent="302" name="from_id">
       <ColNames>from_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="314" parent="301" name="to_id">
+    <index id="322" parent="302" name="to_id">
       <ColNames>to_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="315" parent="301" name="PRIMARY">
+    <key id="323" parent="302" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="316" parent="302" name="user_id">
+    <column id="324" parent="303" name="user_id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="317" parent="302" name="friend_id">
+    <column id="325" parent="303" name="friend_id">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <foreign-key id="318" parent="302" name="friends_ibfk_1">
+    <foreign-key id="326" parent="303" name="friends_ibfk_1">
       <ColNames>user_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>user</RefTableName>
     </foreign-key>
-    <foreign-key id="319" parent="302" name="friends_ibfk_2">
+    <foreign-key id="327" parent="303" name="friends_ibfk_2">
       <ColNames>friend_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>user</RefTableName>
     </foreign-key>
-    <index id="320" parent="302" name="user_id">
+    <index id="328" parent="303" name="user_id">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="321" parent="302" name="friend_id">
+    <index id="329" parent="303" name="friend_id">
       <ColNames>friend_id</ColNames>
       <Type>btree</Type>
     </index>
-    <column id="322" parent="303" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="323" parent="303" name="user_id">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="324" parent="303" name="img_name">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StoredType>varchar(255)|0s</StoredType>
-    </column>
-    <column id="325" parent="303" name="like">
-      <DefaultExpression>0</DefaultExpression>
-      <Position>4</Position>
-      <StoredType>tinyint(1)|0s</StoredType>
-    </column>
-    <column id="326" parent="303" name="comment">
-      <Position>5</Position>
-      <StoredType>text|0s</StoredType>
-    </column>
-    <index id="327" parent="303" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="328" parent="303" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="329" parent="304" name="id">
-      <AutoIncrement>13</AutoIncrement>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="330" parent="304" name="from_id">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="331" parent="304" name="to_id">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="332" parent="304" name="message">
-      <Position>4</Position>
-      <StoredType>text|0s</StoredType>
-    </column>
-    <column id="333" parent="304" name="date">
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-      <StoredType>date|0s</StoredType>
-    </column>
-    <foreign-key id="334" parent="304" name="message_ibfk_1">
-      <ColNames>from_id</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>user</RefTableName>
-    </foreign-key>
-    <foreign-key id="335" parent="304" name="message_ibfk_2">
-      <ColNames>to_id</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>user</RefTableName>
-    </foreign-key>
-    <index id="336" parent="304" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <index id="337" parent="304" name="from_id">
-      <ColNames>from_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="338" parent="304" name="to_id">
-      <ColNames>to_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="339" parent="304" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="340" parent="305" name="id">
+    <column id="330" parent="304" name="id">
       <AutoIncrement>4</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="341" parent="305" name="name">
+    <column id="331" parent="304" name="user_id">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>int|0s</StoredType>
     </column>
-    <column id="342" parent="305" name="surname">
+    <column id="332" parent="304" name="img_name">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="343" parent="305" name="email">
-      <NotNull>1</NotNull>
+    <column id="333" parent="304" name="like">
+      <DefaultExpression>0</DefaultExpression>
       <Position>4</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>tinyint(1)|0s</StoredType>
     </column>
-    <column id="344" parent="305" name="password">
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-      <StoredType>varchar(255)|0s</StoredType>
-    </column>
-    <column id="345" parent="305" name="image_name">
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-      <StoredType>varchar(255)|0s</StoredType>
-    </column>
-    <index id="346" parent="305" name="PRIMARY">
+    <index id="334" parent="304" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="347" parent="305" name="PRIMARY">
+    <key id="335" parent="304" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="336" parent="305" name="id">
+      <AutoIncrement>16</AutoIncrement>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="337" parent="305" name="from_id">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="338" parent="305" name="to_id">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="339" parent="305" name="message">
+      <Position>4</Position>
+      <StoredType>text|0s</StoredType>
+    </column>
+    <column id="340" parent="305" name="date">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>date|0s</StoredType>
+    </column>
+    <foreign-key id="341" parent="305" name="message_ibfk_1">
+      <ColNames>from_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>user</RefTableName>
+    </foreign-key>
+    <foreign-key id="342" parent="305" name="message_ibfk_2">
+      <ColNames>to_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>user</RefTableName>
+    </foreign-key>
+    <index id="343" parent="305" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="344" parent="305" name="from_id">
+      <ColNames>from_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="345" parent="305" name="to_id">
+      <ColNames>to_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="346" parent="305" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="347" parent="306" name="id">
+      <AutoIncrement>4</AutoIncrement>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="348" parent="306" name="name">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="349" parent="306" name="surname">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="350" parent="306" name="email">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="351" parent="306" name="password">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="352" parent="306" name="image_name">
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <index id="353" parent="306" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="354" parent="306" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

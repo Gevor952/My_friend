@@ -10,27 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acaa1876-fe7c-4a6f-bdcd-e87a1a333486" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/model/Images.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/service/ImagesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/LikeImgServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/MyProfil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/btn_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/images/freepik__a-serene-landscape-with-mountains-silhouetted-agai__58151 (1).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/style1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/model/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/CommentImgServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/commentImg.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-3.7.1.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8c038aea-4a12-418c-8764-f4fff2010239.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8c038aea-4a12-418c-8764-f4fff2010239.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/filter/UserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/filter/UserFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/MainServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friendRequests.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friendRequests.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friendResponses.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friendResponses.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friends.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/friends.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/logout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myProfil.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/registration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sendMessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sendMessage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/style2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/model/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/model/Images.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/service/ImagesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/service/ImagesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/MyProfil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/am/itspace/myfriend/servlet/MyProfil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myProfil.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myProfil.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -90,7 +80,7 @@
     &quot;Tomcat Server.Tomcat 9.0.97.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/NITRO/IdeaProjects/My friend/src/main/java/am/itspace/myfriend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/NITRO/Desktop/todoTemplate&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -242,7 +232,23 @@
       <workItem from="1732553348386" duration="10440000" />
       <workItem from="1732567430710" duration="6446000" />
       <workItem from="1732603627752" duration="5534000" />
-      <workItem from="1732627413450" duration="4008000" />
+      <workItem from="1732627413450" duration="6130000" />
+      <workItem from="1732656154625" duration="1852000" />
+      <workItem from="1732795915141" duration="2647000" />
+      <workItem from="1733144692946" duration="44000" />
+      <workItem from="1733145907501" duration="24000" />
+      <workItem from="1733146682137" duration="77000" />
+      <workItem from="1733147297200" duration="36000" />
+      <workItem from="1733147371370" duration="106000" />
+      <workItem from="1733147686830" duration="465000" />
+      <workItem from="1733148520248" duration="77000" />
+      <workItem from="1733149197345" duration="16000" />
+      <workItem from="1733153738977" duration="1839000" />
+      <workItem from="1733160993055" duration="3000" />
+      <workItem from="1733169541974" duration="44000" />
+      <workItem from="1733169736491" duration="17000" />
+      <workItem from="1733171797710" duration="180000" />
+      <workItem from="1733233912435" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -292,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732371923623</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=".">
+      <option name="closed" value="true" />
+      <created>1732631616137</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732631616137</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

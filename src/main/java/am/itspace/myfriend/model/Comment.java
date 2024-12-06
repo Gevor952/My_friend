@@ -5,15 +5,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @Builder
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Images {
-    private int id;
-    private int userId;
-    private String imgName;
-    private boolean like;
-
-    public boolean getLike(){return like;}
+public class Comment {
+    private User user;
+    private Images images;
+    private String comment;
 }

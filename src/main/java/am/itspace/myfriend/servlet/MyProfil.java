@@ -28,7 +28,6 @@ public class MyProfil extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Images> images = imagesService.getAllImages(((User)(req.getSession().getAttribute("user"))).getId());
-        System.out.println(images);
         req.setAttribute("images", images);
         req.getRequestDispatcher("/WEB-INF/myProfil.jsp").forward(req, resp);
     }

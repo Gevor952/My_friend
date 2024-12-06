@@ -40,8 +40,10 @@
         <div class="porc">
             <%if(image.getLike()){%>
                 <a href="/likeImg?id=<%=image.getId()%>&boolean=1"><i class='bx bxs-like' ></i></a>
+                <a href="/commentImg?id=<%=image.getId()%>"><i class='bx bx-comment-detail'></i></a>
             <%}else {%>
                 <a href="/likeImg?id=<%=image.getId()%>&boolean=0"><i class='bx bx-like' ></i></a>
+                <a href="/commentImg?id=<%=image.getId()%>"><i class='bx bx-comment-detail'></i></a>
             <%}%>
 
         </div>
